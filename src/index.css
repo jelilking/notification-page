@@ -220,9 +220,10 @@ li {
 
 @media (max-width: 375px) {
   .notification-page {
+    max-width: 400px;
     width: 100%;
     margin: 5px;
-    padding: 18px;
+    padding: 15px;
     border-radius: 10px;
   }
 
@@ -263,24 +264,15 @@ li {
   }
 
   .messageInfo {
-    font-size: 14px;
-    padding: 10px;
+    font-size: 15px;
+    padding: 8px;
   }
 
   .notification-item .notification-details .dot {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .notification-item .notification-text .time {
-    font-size: 8px;
-  }
-
-  .messageInfo {
-    font-size: 10px;
-    border: 2.5px solid var(--Light-grayish-blue-1);
-    margin: 15px 0;
-    padding: 8px;
-    border-radius: 10px;
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 12px;
   }
 }

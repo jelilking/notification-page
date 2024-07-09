@@ -41,7 +41,7 @@ const initianlNotification = [
     id: 4,
     name: "Rizky Hasanuddin",
     message: "sent you a private message",
-    time: " 5 days ago",
+    time: "5 days ago",
     messageInfo:
       "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
     isRead: true,
@@ -62,7 +62,7 @@ const initianlNotification = [
     message:
       "reacted to your recent post 5 end-game strategies to increase your win rate",
 
-    time: " 2 weeks ago",
+    time: "2 weeks ago",
     isRead: true,
     avatar: avatar6,
   },
