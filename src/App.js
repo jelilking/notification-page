@@ -18,7 +18,7 @@ const initianlNotification = [
     messageAction: "My first tournament today!",
     time: "1m ago",
     isRead: false,
-    avatar: avatar1,
+    avatar: avatar5,
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const initianlNotification = [
     message: "followed you",
     isRead: false,
     time: "5m ago",
-    avatar: avatar2,
+    avatar: avatar1,
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const initianlNotification = [
     messageInfo:
       "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
     isRead: true,
-    avatar: avatar4,
+    avatar: avatar7,
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ const initianlNotification = [
     messagePic: avatar8,
     time: " 1 week ago",
     isRead: true,
-    avatar: avatar5,
+    avatar: avatar4,
   },
   {
     id: 6,
@@ -73,7 +73,7 @@ const initianlNotification = [
     messageAction: "Chess Club",
     time: "2 weeks ago",
     isRead: true,
-    avatar: avatar7,
+    avatar: avatar2,
   },
 ];
 
@@ -140,35 +140,35 @@ function NotifiacationPage() {
 function Notification({ notification }) {
   return (
     <div className="notification-item">
-      <img src={notification.avatar} alt="avatar" />
       <div className="notification-details">
-        <div className="details">
-          <div className="notification-text">
-            <span className="name">{notification.name}</span>
-            <span className="message"> {notification.message} </span>
-            <span
-              className={
-                notification.isRead ? "unmessageAction" : "messageAction"
-              }
-            >
-              {notification.messageAction}
-            </span>
-            <span className="dot">
-              {" "}
-              {notification.isRead === false ? "●" : ""}
-            </span>
-
-            <p className="time">{notification.time}</p>
-          </div>
-
-          <div className="image">
-            {notification.messagePic && (
-              <img src={notification.messagePic} alt="chess" />
-            )}
-          </div>
+        <div>
+          <img src={notification.avatar} alt="avatar" />
         </div>
-        {notification.messageInfo && (
-          <p className="messageInfo">{notification.messageInfo}</p>
+        <div className="notification-text">
+          <span className="name">{notification.name}</span>
+          <span className="message"> {notification.message} </span>
+          <span
+            className={
+              notification.isRead ? "unmessageAction" : "messageAction"
+            }
+          >
+            {notification.messageAction}
+          </span>
+          <span className="dot">
+            {""}
+            {notification.isRead === false ? "●" : ""}
+          </span>
+
+          <p className="time">{notification.time}</p>
+
+          {notification.messageInfo && (
+            <p className="messageInfo">{notification.messageInfo}</p>
+          )}
+        </div>
+      </div>
+      <div className="image">
+        {notification.messagePic && (
+          <img src={notification.messagePic} alt="chess" />
         )}
       </div>
     </div>
