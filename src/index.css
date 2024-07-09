@@ -3,9 +3,7 @@
 :root {
   --Red: hsl(1, 90%, 64%);
   --Blue: hsl(219, 85%, 26%);
-
   --Yellow: hsl(52, 100%, 62%);
-
   --White: hsl(0, 0%, 100%);
   --Very-light-grayish-blue: hsl(210, 60%, 98%);
   --Light-grayish-blue-1: hsl(211, 68%, 94%);
@@ -28,15 +26,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .notification-page {
-  max-width: 700px;
+  max-width: 700;
+  /* width: 100%; */
   font-family: Arial, sans-serif;
-  margin: 20px;
-  padding: 20px;
+  margin: 10px;
+  padding: 30px;
   background-color: var(--White);
   border-radius: 20px;
 }
@@ -46,42 +44,32 @@ img {
   height: 50px;
 }
 
-/* .notification-list {
-  display: flex;
-  gap: 10px;
-  
-} */
-
-/* .notification-list h3 {
-  font-size: 40px;
-} */
-
 .notification-page .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 10px;
   font-family: "Plus Jakarta Sans", sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .notification-page .header h1 {
   columns: var(--Dark-grayish-blue);
   font-weight: 800;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .notification-page .header span {
   color: var(--White);
   background-color: var(--Blue);
-  padding: 4px 15px;
+  padding: 4px 12px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 14px;
   margin-left: 6px;
 }
 
 .notification-page .header button {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 800;
   font-family: "Plus Jakarta Sans", sans-serif;
   color: var(--Blue);
@@ -90,17 +78,8 @@ img {
   cursor: pointer;
 }
 
-btn-read {
-  color: var(--Blue);
-}
-
-btn-unread {
-  color: var(--Grayish-blue);
-}
-
 .notification-item {
   display: flex;
-
   gap: 1rem;
   padding: 10px;
 }
@@ -137,6 +116,7 @@ li {
   font-family: "Plus Jakarta Sans", sans-serif;
   color: var(--Very-dark-blue);
 }
+
 .notification-item .messageAction {
   font-size: 15px;
   font-weight: 900;
@@ -151,9 +131,9 @@ li {
 }
 
 .messageInfo {
-  font-size: 17px;
+  font-size: 15px;
   border: 2.5px solid var(--Light-grayish-blue-1);
-  margin: 15px;
+  margin: 15px 0;
   padding: 12px;
   border-radius: 10px;
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -166,7 +146,7 @@ li {
 .notification-item .notification-details .dot {
   font-weight: 900;
   color: var(--Red);
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .notification-item .notification-details {
@@ -216,7 +196,7 @@ li {
 .notification-item .notification-text .dot {
   font-weight: 900;
   color: var(--Red);
-  font-size: 22px;
+  font-size: 20px;
   margin-left: 5px;
 }
 
@@ -238,18 +218,69 @@ li {
   border-radius: 5px;
 }
 
-@media (max-width: 600px) {
-  .notification-item .details {
+@media (max-width: 375px) {
+  .notification-page {
+    width: 100%;
+    margin: 5px;
+    padding: 18px;
+    border-radius: 10px;
+  }
+
+  .notification-page .header {
+    font-size: 8px;
+    margin-bottom: 15px;
+  }
+
+  .notification-page .header h1 {
+    font-size: 16px;
+  }
+
+  .notification-page .header span {
+    padding: 2px 10px;
+    font-size: 10px;
+  }
+
+  .notification-page .header button {
+    font-size: 10px;
+  }
+
+  .notification-item {
     flex-direction: column;
-    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .notification-item {
+    flex-direction: row;
   }
 
   .notification-item .details .image {
     margin-top: 10px;
   }
 
-  .notification-item .details .image img {
+  .notification-item .image img {
     width: 40px;
     height: 40px;
+  }
+
+  .messageInfo {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .notification-item .notification-details .dot {
+    font-size: 14px;
+  }
+
+  .notification-item .notification-text .time {
+    font-size: 8px;
+  }
+
+  .messageInfo {
+    font-size: 10px;
+    border: 2.5px solid var(--Light-grayish-blue-1);
+    margin: 15px 0;
+    padding: 8px;
+    border-radius: 10px;
+    font-family: "Plus Jakarta Sans", sans-serif;
   }
 }
