@@ -33,8 +33,8 @@ The challenge is to build a notification page that shows a list of notifications
 
 ## Links
 
-- [Live Site](https://your-live-site-url.com)
-- [Source Code](https://github.com/your-username/notification-page-app)
+- [Live Site](https://jelilking.github.io/notification-page)
+- [Source Code](https://github.com/jelilking/notification-page)
 
 ## My process
 
@@ -63,13 +63,9 @@ In future projects, I plan to:
 ## Author
 
 - Malik
-- [GitHub](https://github.com/your-username)
-- [Twitter](https://twitter.com/your-username)
+- [GitHub](https://github.com/jelilking)
+- [Twitter](https://twitter.com/@maliking25)
 
 ## Acknowledgments
 
-I would like to thank the Frontend Mentor community for providing this challenge and for the valuable feedback.
-
----
-
-This README provides a structured overview of your project, highlights your learning experience, and includes links to the live site and source code. You can update the links and author information as needed.
+I would like to thank the Frontend Mentor community for providing this challenge.
