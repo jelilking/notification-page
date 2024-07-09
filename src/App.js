@@ -40,7 +40,7 @@ const initianlNotification = [
   {
     id: 4,
     name: "Rizky Hasanuddin",
-    message: "Rizky Hasanuddin sent you a private message",
+    message: "sent you a private message",
     time: " 5 days ago",
     messageInfo:
       "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
