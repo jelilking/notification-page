@@ -14,7 +14,7 @@ const initianlNotification = [
   {
     id: 1,
     name: "Mark webber",
-    message: "reacted to your recent post ",
+    message: "reacted to your recent post",
     messageAction: "My first tournament today!",
     time: "1m ago",
     isRead: false,
@@ -145,7 +145,7 @@ function Notification({ notification }) {
           <img src={notification.avatar} alt="avatar" />
         </div>
         <div className="notification-text">
-          <span className="name">{notification.name}</span>
+          <span className="name"> {notification.name} </span>
           <span className="message"> {notification.message} </span>
           <span
             className={
@@ -153,9 +153,9 @@ function Notification({ notification }) {
             }
           >
             {notification.messageAction}
+            {""}
           </span>
           <span className="dot">
-            {""}
             {notification.isRead === false ? "●" : ""}
           </span>
 
